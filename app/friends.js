@@ -1,28 +1,30 @@
-var express = require("express");
-var bodyParser = require("body-parser");
-
-var app = express();
-
-// Sets an initial port. We"ll use this later in our listener
-var PORT = process.env.PORT || 8080;
-
-// Sets up the Express app to handle data parsing
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
-
 // Friends (DATA)
 //==============================================================
-var friends = [
+var friendz = [
     {
-        name: "",
-        photo: "???",
-        scores: []
+        name: "cody",
+        photo: "silly.jpg",
+        scores: [1, 2, 4, 5, 5, 5, 5, 4, 3, 2]
+    },
+    {
+        name: "Sam",
+        photo: "silly.jpg",
+        scores: [1, 4, 4, 5, 5, 3, 5, 4, 3, 2]
+    },
+    {
+        name: "Tom",
+        photo: "silly.jpg",
+        scores: [2, 3, 1, 1, 1, 3, 5, 4, 3, 2]
     }
-]
+];
 
-// The below code effectively "starts" our server
-// =============================================================================
+exports.match = function(newFriend) {
+    console.log(newFriend);
+    //Put logic for friend matching
+    // Make for loop through new friend sent over and compare to friendz array values scores
 
-app.listen(PORT, function() {
-    console.log("App listening on PORT: " + PORT);
-  });
+    return friendz[0]  // Return is the last line of the logic
+    
+};
+
+exports.friendz = friendz;
