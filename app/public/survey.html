@@ -191,7 +191,7 @@
             // myNewFriend.attr("id", "tableWell-" )
 
 
-            $(".submit").on("click", function(event) {
+    $(".submit").on("click", function(event) {
       event.preventDefault();
 
       var q1 = $("#q1").val();
@@ -209,7 +209,7 @@
       var newFriend = {
           name: $("#name").val().trim(),
           photo: $("#photo").val().trim(),
-          scores: $([])
+          scores: [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10]
       }
       console.log(newFriend);
 
@@ -218,8 +218,12 @@
 //  $('#myModal').on('hidden.bs.modal', function (e) {
 //   do something...
 // })
-        })
-    }
+        });
+    });
+};
+
+getFriend();
+
 </script>
 
 </html>

@@ -23,7 +23,7 @@ exports.match = function(newFriend) {
     //Put logic for friend matching
     // Make for loop through new friend sent over and compare to friendz array values scores
 
-    return friendz[0]  // Return is the last line of the logic
+    return friendz[0];  // Return is the last line of the logic
     
 };
 

@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 
 
 // parse application/json
-app.use(bodyParser.json())
+app.use(bodyParser.json());
 
 // parse various different custom JSON types as JSON
 app.use(bodyParser.json({ type: 'application/*+json' }));
