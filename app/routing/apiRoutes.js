@@ -1,4 +1,4 @@
-var friends = require("../app/friends"); //Double check this later
+var friends = require("../data/friends"); //Double check this later
 
 // ===============================================================================
 // ROUTING

@@ -26,8 +26,8 @@ app.use(bodyParser.raw({ type: 'application/vnd.custom-type' }));
 app.use(bodyParser.text({ type: 'text/html' }));
 
 // Where we require routes for server
-require("./routing/apiRoutes")(app);
-require("./routing/htmlRoutes")(app);
+require("./app/routing/apiRoutes")(app);
+require("./app/routing/htmlRoutes")(app);
 
 // The below code effectively "starts" our server
 // =============================================================================
